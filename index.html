@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Afrith Ahamed S · Technical Support Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Afrith Ahamed S — Technical Support Engineer with 2.5+ years experience in Dell EMC backup tech, upgrades, troubleshooting, and Linux sysadmin."
+    />
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fonts (system stack for speed) -->
+    <style>
+      :root {
+        --brand: #0ea5e9; /* sky-500 */
+        --brand-2: #a855f7; /* violet-500 */
+        --ring: rgba(14, 165, 233, 0.35);
+        --card-bg-light: rgba(255, 255, 255, 0.7);
+        --card-bg-dark: rgba(17, 17, 17, 0.6);
+      }
+
+      /* Background gradient mesh */
+      body {
+        background: radial-gradient(
+            60vmax 60vmax at -10% -10%,
+            rgba(14, 165, 233, 0.12),
+            transparent 60%
+          ),
+          radial-gradient(
+            50vmax 50vmax at 110% 10%,
+            rgba(168, 85, 247, 0.1),
+            transparent 60%
+          ),
+          radial-gradient(
+            40vmax 40vmax at 50% 120%,
+            rgba(34, 197, 94, 0.1),
+            transparent 60%
+          );
+        backdrop-filter: saturate(1.05);
+      }
+
+      /* Section spacing */
+      section {
+        padding: 72px 0;
+      }
+
+      /* Glass cards */
+      .glass {
+        border: 1px solid rgba(125, 125, 125, 0.18);
+        background: var(--card-bg-light);
+        backdrop-filter: blur(10px);
+      }
+      [data-bs-theme="dark"] .glass {
+        background: var(--card-bg-dark);
+      }
+
+      /* Hover lift + ring */
+      .card-hover {
+        transition: transform 0.35s ease, box-shadow 0.35s ease,
+          border-color 0.35s ease;
+        border-radius: 1rem !important;
+      }
+      .card-hover:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.45), 0 0 0 6px var(--ring);
+        border-color: rgba(14, 165, 233, 0.35) !important;
+      }
+
+      /* Fancy underline on links */
+      .fancy-link {
+        text-decoration: none;
+        background: linear-gradient(90deg, var(--brand), var(--brand-2));
+        background-size: 0% 2px;
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+        transition: background-size 0.25s ease, color 0.2s ease;
+      }
+      .fancy-link:hover {
+        background-size: 100% 2px;
+      }
+
+      /* Tag chips */
+      .chip {
+        border-radius: 999px;
+        padding: 0.35rem 0.75rem;
+        border: 1px solid rgba(125, 125, 125, 0.22);
+        transition: transform 0.25s ease, background-color 0.25s ease;
+      }
+      .chip:hover {
+        transform: translateY(-2px);
+      }
+
+      /* Section title accent */
+      .section-title span {
+        background: linear-gradient(90deg, var(--brand), var(--brand-2));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      /* Hero name gradient */
+      .brand-text {
+        background: linear-gradient(90deg, var(--brand), var(--brand-2));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      /* Enter animations */
+      .reveal {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      .revealed {
+        opacity: 1;
+        transform: none;
+        transition: all 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+
+      /* Timeline */
+      .timeline {
+        position: relative;
+        padding-left: 1rem;
+      }
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 0.35rem;
+        top: 0.25rem;
+        bottom: 0.25rem;
+        width: 2px;
+        background: linear-gradient(
+          180deg,
+          rgba(14, 165, 233, 0.35),
+          rgba(168, 85, 247, 0.35)
+        );
+      }
+      .dot {
+        width: 0.85rem;
+        height: 0.85rem;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--brand), var(--brand-2));
+        box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.18);
+      }
+
+      /* Footer subtle line */
+      footer {
+        border-top: 1px solid rgba(125, 125, 125, 0.18);
+      }
+    </style>
+
+    <!-- JSON-LD (basic person schema) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Afrith Ahamed S",
+        "jobTitle": "Technical Support Engineer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Erode",
+          "addressRegion": "Tamil Nadu",
+          "addressCountry": "IN"
+        },
+        "email": "mailto:afrithahamed50@gmail.com",
+        "telephone": "+919942736786",
+        "url": ""
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg sticky-top glass py-2">
+      <div class="container">
+        <a class="navbar-brand fw-semibold">
+          <i class="bi bi-shield-lock me-2"></i> Afrith Ahamed
+        </a>
+        <div class="d-flex align-items-center gap-2">
+          <button
+            id="themeToggle"
+            class="btn btn-sm btn-outline-secondary"
+            aria-label="Toggle theme"
+          >
+            <i class="bi bi-moon-stars" id="themeIcon"></i>
+          </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="container py-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <div class="reveal">
+            <div
+              class="d-inline-flex align-items-center gap-2 small text-secondary mb-2"
+            >
+              <span
+                class="badge text-bg-primary-subtle border border-primary-subtle"
+                >Technical Support</span
+              >
+              <span class="badge text-bg-info-subtle border border-info-subtle"
+                >Upgrades</span
+              >
+              <span
+                class="badge text-bg-success-subtle border border-success-subtle"
+                >Troubleshooting</span
+              >
+            </div>
+            <h1 class="display-5 fw-bold lh-tight mb-3">
+              Hi, I’m <span class="brand-text">Afrith Ahamed S</span>
+            </h1>
+            <p class="lead text-secondary mb-4">
+              Technical Support & Upgrade Engineer (2.5+ yrs) — Dell EMC backup
+              stack (IDPA, Data Domain, Avamar), secure upgrades, log analysis,
+              and Linux sysadmin. I keep systems healthy, patched, and humming —
+              with minimal downtime.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary btn-lg" href="#contact">
+                <i class="bi bi-send me-2"></i> Get in touch
+              </a>
+              <a
+                class="btn btn-outline-primary btn-lg"
+                href="Afrith_Technical_Support_Engineer.pdf"
+                download
+              >
+                <i class="bi bi-download me-2"></i> Download Resume
+              </a>
+              <a
+                class="btn btn-outline-secondary btn-lg"
+                target="_blank"
+                rel="noopener"
+                href="https://www.linkedin.com/in/afrith-ahamed-s-274001250"
+              >
+                <i class="bi bi-linkedin me-2"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="glass card-hover p-4 rounded-4 reveal">
+            <h6 class="text-uppercase text-secondary mb-3">Quick Highlights</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <i class="bi bi-check2-circle me-2 text-success"></i> Secure
+                software + OS rollups, hotfixes, vault/drive upgrades
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check2-circle me-2 text-success"></i>
+                Pre-upgrade health checks, prerequisites validation
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check2-circle me-2 text-success"></i> Log
+                bundles + Lightning (Salesforce) analysis
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check2-circle me-2 text-success"></i> Customer
+                support, RCA, proactive remediation
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7">
+            <div class="p-4 p-md-5 glass rounded-4 card-hover h-100 reveal">
+              <h2 class="section-title h3 mb-3">About <span>Me</span></h2>
+              <p class="mb-0">
+                A dedicated Technical Support & Upgrade Engineer with hands-on
+                experience across Dell EMC’s backup ecosystem. I plan and
+                execute upgrades, validate readiness, and keep documentation
+                tight. On the ops side, I monitor Avamar, Data Domain, IDPA, and
+                VMware (vCenter/ESXi), troubleshoot fast, and close the loop
+                with clear fixes and RCAs.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="p-4 p-md-5 glass rounded-4 card-hover h-100 reveal">
+              <h2 class="section-title h3 mb-3">Contact <span>Info</span></h2>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2">
+                  <i class="bi bi-geo-alt me-2"></i> Erode, Tamil Nadu, India
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-envelope me-2"></i>
+                  <a class="fancy-link" href="mailto:afrithahamed50@gmail.com"
+                    >afrithahamed50@gmail.com</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-telephone me-2"></i>
+                  <a class="fancy-link" href="tel:+919942736786"
+                    >+91 99427 36786</a
+                  >
+                </li>
+                <li class="mb-0">
+                  <i class="bi bi-linkedin me-2"></i>
+                  <a
+                    class="fancy-link"
+                    target="_blank"
+                    rel="noopener"
+                    href="https://www.linkedin.com/in/afrith-ahamed-s-274001250"
+                    >linkedin.com/in/afrith-ahamed-s-274001250</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title h3 mb-4 text-center">
+          Work <span>Experience</span>
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="timeline d-grid gap-4">
+              <div
+                class="glass rounded-4 p-4 card-hover reveal position-relative"
+              >
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <div class="dot"></div>
+                  <h3 class="h5 mb-0">
+                    Technical Support Engineer — Wipro Technologies
+                  </h3>
+                </div>
+                <div class="text-secondary mb-3">
+                  Jan 2024 — Present · Dell Technologies
+                </div>
+                <ul class="mb-0">
+                  <li>
+                    Software/OS upgrades, hotfixes, security patches; Toshiba
+                    drive & vault upgrades.
+                  </li>
+                  <li>
+                    Pre-upgrade health checks to validate SW/HW prerequisites;
+                    minimal disruption rollouts.
+                  </li>
+                  <li>
+                    Documentation, log bundles, and deep-dive analysis with
+                    Salesforce Lightning.
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="glass rounded-4 p-4 card-hover reveal position-relative"
+              >
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <div class="dot"></div>
+                  <h3 class="h5 mb-0">
+                    DELL Upgrade Engineer — Wipro Technologies
+                  </h3>
+                </div>
+                <div class="text-secondary mb-3">Jan 2023 — Jan 2024</div>
+                <ul class="mb-0">
+                  <li>
+                    Customer support during upgrades; backups/replications
+                    oversight and case handling.
+                  </li>
+                  <li>
+                    Troubleshooting Dell servers via error/log analysis; RCA +
+                    optimal solutions.
+                  </li>
+                  <li>
+                    Patch installs, config changes, and infrastructure stability
+                    for Avamar, Data Domain, IDPA, ESXi, vCenter.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title h3 mb-4 text-center">
+          Skills & <span>Tools</span>
+        </h2>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="glass rounded-4 p-4 card-hover reveal h-100">
+              <h5 class="mb-3">
+                <i class="bi bi-hdd-network me-2"></i> Tech Stack
+              </h5>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="chip">Dell EMC IDPA</span>
+                <span class="chip">Data Domain</span>
+                <span class="chip">Avamar</span>
+                <span class="chip">vCenter</span>
+                <span class="chip">ESXi</span>
+                <span class="chip">Linux (Udemy—Beginners)</span>
+              </div>
+              <hr class="my-4" />
+              <h6 class="text-secondary mb-2">Core Strengths</h6>
+              <ul class="mb-0">
+                <li>Upgrades & Rollouts (SW/OS/Hotfix/Security)</li>
+                <li>Backup & Replication Monitoring</li>
+                <li>Log Analysis & RCA</li>
+                <li>Customer Support & Documentation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="glass rounded-4 p-4 card-hover reveal h-100">
+              <h5 class="mb-3">
+                <i class="bi bi-tools me-2"></i> Platforms & Tools
+              </h5>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="chip">Salesforce Lightning</span>
+                <span class="chip">RCM Scheduler</span>
+                <span class="chip">Log Bundling</span>
+                <span class="chip">Health Check Scripts</span>
+              </div>
+              <hr class="my-4" />
+              <h6 class="text-secondary mb-2">Certifications</h6>
+              <ul class="mb-0">
+                <li>Typewriting (English) — Govt. of Tamil Nadu</li>
+                <li>Udemy — Linux for Beginners</li>
+                <li>Photography (capture & edit)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <div class="container">
+        <h2 class="section-title h3 mb-4 text-center">
+          Academic <span>History</span>
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="glass rounded-4 p-4 card-hover reveal">
+              <div
+                class="d-flex align-items-center justify-content-between flex-wrap gap-2"
+              >
+                <h5 class="mb-0">
+                  <i class="bi bi-mortarboard me-2"></i> B.Sc. Physics — Jamal
+                  Mohamed College
+                </h5>
+                <span class="text-secondary">2019–2022 • 75%</span>
+              </div>
+              <p class="mb-0 mt-3 text-secondary">
+                Active participant across studies and activities; certified
+                photographer with post-processing skills.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title h3 mb-4 text-center">
+          Let’s <span>Talk</span>
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="glass rounded-4 p-4 card-hover reveal">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-envelope fs-4 me-3"></i>
+                    <div>
+                      <div class="small text-secondary">Email</div>
+                      <a
+                        class="fancy-link"
+                        href="mailto:afrithahamed50@gmail.com"
+                        >afrithahamed50@gmail.com</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-telephone fs-4 me-3"></i>
+                    <div>
+                      <div class="small text-secondary">Phone</div>
+                      <a class="fancy-link" href="tel:+919942736786"
+                        >+91 99427 36786</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-geo-alt fs-4 me-3"></i>
+                    <div>
+                      <div class="small text-secondary">Location</div>
+                      <span>Erode, Tamil Nadu, India</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-linkedin fs-4 me-3"></i>
+                    <div>
+                      <div class="small text-secondary">LinkedIn</div>
+                      <a
+                        class="fancy-link"
+                        target="_blank"
+                        rel="noopener"
+                        href="https://www.linkedin.com/in/afrith-ahamed-s-274001250"
+                        >/afrith-ahamed-s-274001250</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4">
+      <div
+        class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2"
+      >
+        <div class="small text-secondary">
+          © <span id="y"></span> Afrith Ahamed S. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Theme + Reveal Scripts -->
+    <script>
+      // Year
+      document.getElementById("y").textContent = new Date().getFullYear();
+
+      // Theme toggle with localStorage
+      const root = document.documentElement;
+      const toggle = document.getElementById("themeToggle");
+      const icon = document.getElementById("themeIcon");
+
+      const saved = localStorage.getItem("theme");
+      if (saved) {
+        root.setAttribute("data-bs-theme", saved);
+      }
+      icon.className =
+        root.getAttribute("data-bs-theme") === "dark"
+          ? "bi bi-sun"
+          : "bi bi-moon-stars";
+
+      toggle.addEventListener("click", () => {
+        const current = root.getAttribute("data-bs-theme") || "light";
+        const next = current === "light" ? "dark" : "light";
+        root.setAttribute("data-bs-theme", next);
+        localStorage.setItem("theme", next);
+        icon.className = next === "dark" ? "bi bi-sun" : "bi bi-moon-stars";
+      });
+
+      // Simple reveal-on-scroll
+      const els = document.querySelectorAll(".reveal");
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("revealed");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+      els.forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>
